@@ -36,7 +36,7 @@
                     <input type="password" placeholder="Password"/>
                 </div>
                 <div class="form-group">
-                    <button type="submit">Login</button>
+                    <button type="submit", id="login-but">Login</button>
                 </div>
                 <div class="form-option">
                     <a href="" class="forgot-password">Forgot Password?</a>
@@ -49,6 +49,11 @@
             document.getElementById('animate').addEventListener('click', function(event) {
                 var audio = document.getElementById('myAudio');
                 audio.play();
+            });
+            document.getElementById('login-but').addEventListener('click', function(event){
+                event.preventDefault();
+                // I need this to hyperlink to something
+                window.location.href = '';
             });
         </script>
     </body>
