@@ -207,17 +207,26 @@ body {
 .login-box button {
     font-family: "minecraft";
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: rgb(202, 202, 202);
     /*how do I give text a gradient from top to bottom in html css*/
     background: url(/resources/grass.png);
     background-size: cover;
     -webkit-background-fill-color: transparent;
     border: solid;
-    border-color: rgb(255, 255, 255);
+    border-top-color: green;
+    border-bottom-color: rgb(92, 62, 29);
+    border-right-color: rgb(126, 82, 35);
+    border-left-color: rgb(126, 82, 35);
     width: 100px;
     height: 38px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+/* Can you make the text go dark blue when the button is hovered */
+.login-box button:hover {
+    color: white;
+    border-color: white;
+    scale:105%;
 }
 .login-box a {
     display:inline-block;
